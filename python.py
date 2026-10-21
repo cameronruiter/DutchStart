@@ -5,7 +5,13 @@ import os
 
 load_dotenv()
 
-client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
+api_key = os.getenv("GEMINI_API_KEY") or st.secrets.get("GEMINI_API_KEY")
+
+if not api_key:
+    st.error("No API key found.")
+    st.stop()
+
+client = genai.Client(api_key=api_key)
 
 st.title("🇳🇱 DutchStart")
 
@@ -61,5 +67,6 @@ User's question:
             st.write(response.text)
 
         # If Gemini/API has a problem
-        except Exception:
+        except Exception as e:
+            print(f"DutchStart error: {e}")
             st.error("Something went wrong. Please try again in a moment.")
