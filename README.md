@@ -22,7 +22,7 @@ Work & Money), type a question in plain English, and get back:
 
 ## Live app
 
-**[Open DutchStart]([https://your-actual-url.streamlit.app](https://dutchstart.streamlit.app/))**
+**[Open DutchStart](https://dutchstart.streamlit.app/)**
 
 ## Running it locally
 
