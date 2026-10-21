@@ -22,8 +22,7 @@ Work & Money), type a question in plain English, and get back:
 
 ## Live app
 
-<!-- Paste your Streamlit Community Cloud URL here once deployed -->
-_Deployed link: (add URL here)_
+**[Open DutchStart]([https://your-actual-url.streamlit.app](https://dutchstart.streamlit.app/))**
 
 ## Running it locally
 
