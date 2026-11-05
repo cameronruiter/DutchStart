@@ -12,6 +12,18 @@
 | 🎞️ **Presentation** | [Canva slides](https://www.canva.com/design/DAHWA-J538w/WME0XGq9bRpNwWMLlynnDQ/edit) · [PDF](Hackathon-week-3-slides-pdf%20%281%29.pdf) |
 | 🌍 **SDG 10** | [sdgs.un.org/goals/goal10](https://sdgs.un.org/goals/goal10) |
 
+## What we changed for the resit
+Our first version didn't meet the knockouts for **tool usage (K1)** and **scope (K3)**, and there was no running demo. The feedback was that the app only passed the question to Gemini and showed the reply, so it offered nothing over the Gemini website. Here is what we changed:
+
+| Feedback | What we changed |
+|---|---|
+| No running demo | Deployed on Streamlit Community Cloud: [dutchstart.streamlit.app](https://dutchstart.streamlit.app/), with example questions to try. |
+| Python adds no value over Gemini (K1) | Python now removes personal data (BSN with the elfproef, IBAN, email, phone, postcode) before sending, shows fixed warnings for fines, eviction, deposits, scams, CAK letters and visas, checks Gemini's answer and retries once, removes unofficial links, and adds our own glossary and verified source list. |
+| Only basic use of the API (K1) | We now use a system instruction, structured JSON output with a Pydantic response schema, a confidence rating, and multi-turn follow-up questions. |
+| Error handling too basic (K1) | Separate checks and messages for empty, too short and too long questions, broken answers from Gemini, too many requests, Gemini being down, and setup problems. |
+| User group and problem too general (K3) | Narrowed to first-year non-EU international students in The Hague, with a specific problem backed by sources (see [The problem](#the-problem)). |
+| Explain in your own words what you used | Added [What Gemini does vs what Python does](#what-gemini-does-vs-what-python-does), a "What Python checked" box under every answer, and 25 tests for the Python checks. |
+
 ## What it does
 You pick a topic (**Government**, **Housing**, **University** or **Work & Money**) and type a question in English, or try one of the example questions. DutchStart shows:
 - **A plain-English explanation**, with a confidence label (🟢 high, 🟡 medium, 🔴 low) and what Gemini isn't sure about
