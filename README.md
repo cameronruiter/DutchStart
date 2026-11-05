@@ -9,7 +9,7 @@
 | 🌐 **Live app** | [dutchstart.streamlit.app](https://dutchstart.streamlit.app/) |
 | 📦 **Code repository** | [github.com/cameronruiter/DutchStart](https://github.com/cameronruiter/DutchStart) |
 | ⚖️ **Ethical reflection** | [Ethical reflection](#ethical-reflection) |
-| 🎞️ **Presentation** | [Canva slides](https://www.canva.com/design/DAHWA-J538w/WME0XGq9bRpNwWMLlynnDQ/edit) · [PDF](Hackathon-week-3-slides-pdf.pdf) |
+| 🎞️ **Presentation** | [Canva slides](https://www.canva.com/design/DAHWA-J538w/WME0XGq9bRpNwWMLlynnDQ/edit) ·[PDF](Hackathon-week-3-slides-pdf%20%281%29.pdf) |
 | 🌍 **SDG 10** | [sdgs.un.org/goals/goal10](https://sdgs.un.org/goals/goal10) |
 
 ## What it does
